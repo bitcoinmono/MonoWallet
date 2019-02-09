@@ -1,10 +1,10 @@
 ![WalletShell](docs/walletshell.png)
-GoldWallet is a GUI wallet for DeroGold.
+MonoWallet is a GUI wallet for BitcoinMono.
 
 ![WalletShell Screens](https://i.imgur.com/41Ujq0S.gif "WalletShell Screens")
 
 ### Features:
-This wallet contains the basic functions required to manage your DeroGold assets:
+This wallet contains the basic functions required to manage your BitcoinMono assets:
 
 * Wallet creation
   * Create new wallet
@@ -38,46 +38,46 @@ This wallet contains the basic functions required to manage your DeroGold assets
 
 ### Notes
 
-GoldWallet relies on `DeroGold-service` to manage wallet container &amp; rpc communication.
+MonoWallet relies on `BitcoinMono-service` to manage wallet container &amp; rpc communication.
 
-Release installer & packaged archived includes a ready to use `DeroGold-service` binary, which is unmodified copy of DeroGold release archive.
+Release installer & packaged archived includes a ready to use `BitcoinMono-service` binary, which is unmodified copy of BitcoinMono release archive.
 
-On first launch, GoldWallet will try to detect location/path of bundled `DeroGold-service` binary, but if it's failed, you can manually set path to the `DeroGold-service` binary on the Settings screen.
+On first launch, MonoWallet will try to detect location/path of bundled `BitcoinMono-service` binary, but if it's failed, you can manually set path to the `BitcoinMono-service` binary on the Settings screen.
 
-If you don't trust the bundled `DeroGold-service` file, you can compare the checksum (sha256sum) against one from the official release, or simply download and use the binary from official DeroGold release, which is available here: https://github.com/derogold/derogold/releases. Then,  make sure to update your `DeroGold-service` path setting.
+If you don't trust the bundled `BitcoinMono-service` file, you can compare the checksum (sha256sum) against one from the official release, or simply download and use the binary from official BitcoinMono release, which is available here: https://github.com/bitcoinmono/bitcoinmono/releases. Then,  make sure to update your `BitcoinMono-service` path setting.
 
 ### Download &amp; Run WalletShell
 
 #### Windows:
-1. Download the latest installer here: https://github.com/derogold/GoldWallet/releases
-2. Run the installer (`GoldWallet-<version>-win-setup.exe`) and follow the installation wizard.
-3. Launch GoldWallet via start menu or desktop shortcut.
+1. Download the latest installer here: https://github.com/bitcoinmono/MonoWallet/releases
+2. Run the installer (`MonoWallet-<version>-win-setup.exe`) and follow the installation wizard.
+3. Launch MonoWallet via start menu or desktop shortcut.
 
 #### GNU/Linux (AppImage):
-1. Download latest AppImage bundle here: https://github.com/derogold/GoldWallet/releases
-2. Make it executable, either via GUI file manager or command line, e.g. `chmod +x GoldWallet-<version>-linux.AppImage`
+1. Download latest AppImage bundle here: https://github.com/bitcoinmono/MonoWallet/releases
+2. Make it executable, either via GUI file manager or command line, e.g. `chmod +x MonoWallet-<version>-linux.AppImage`
 3. Run/execute the file, double click in file manager, or run via shell/command line.
 
 See: https://docs.appimage.org/user-guide/run-appimages.html
 
 #### macOS (TBD/Untested)
-1. Download latest archive here: https://github.com/derogold/GoldWallet/releases
+1. Download latest archive here: https://github.com/bitcoinmono/MonoWallet/releases
 2. Extract downloaded tar archived
-3. Run the executable binary (`GoldWallet.app/Contents/MacOs/GoldWallet`) ??
+3. Run the executable binary (`MonoWallet.app/Contents/MacOs/GoldWallet`) ??
 
 ### Build
 You need to have `Node.js` and `npm` installed, go to https://nodejs.org and find out how to get it installed on your platform.
 
 Once you have Node+npm installed:
 ```
-# first, download DeroGold-service binary for each platform
-# from DeroGold official repo
-# https://github.com/derogold/derogold/releases
-# extract the DeroGold-service executable somewhere
+# first, download BitcoinMono-service binary for each platform
+# from BitcoinMono official repo
+# https://github.com/bitcoinmono/bitcoinmono/releases
+# extract the BitcoinMono-service executable somewhere
 
 # clone the repo
-$ git clone https://github.com/derogold/GoldWallet
-$ cd GoldWallet
+$ git clone https://github.com/bitcoinmono/MonoWallet
+$ cd MonoWallet
 
 # install dependencies
 $ npm install
@@ -90,17 +90,17 @@ $ cp ./src/assets/icon.* ./build/
 
 # build GNU/Linux package
 $ mkdir -p ./bin/lin
-$ cp /path/to/linux-version-of/DeroGold-service ./bin/lin/
+$ cp /path/to/linux-version-of/BitcoinMono-service ./bin/lin/
 $ npm run dist-lin
 
 # build Windows package
 $ mkdir -p ./bin/win
-$ cp /path/to/win-version-of/DeroGold-servicee.exe ./bin/win/
+$ cp /path/to/win-version-of/BitcoinMono-servicee.exe ./bin/win/
 $ npm run dist-win
 
 # build OSX package
 $ mkdir -p ./bin/osx
-$ cp /path/to/osx-version-of/DeroGold-service ./bin/osx/
+$ cp /path/to/osx-version-of/BitcoinMono-service ./bin/osx/
 $ npm run dist-mac
 ```
 
