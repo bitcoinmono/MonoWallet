@@ -31,14 +31,14 @@ config.walletServiceRpcPort = 11359;
 config.blockExplorerUrl = 'explorer.bitcoinmono.io';
 
 // default remote node to connect to, set this to a known reliable node for 'just works' user experience
-config.remoteNodeDefaultHost = 'node.btcm.semipool.com';
+config.remoteNodeDefaultHost = '127.0.0.1';
 
 // remote node list update url, set to null if you don't have one
 config.remoteNodeListUpdateUrl = '';
 
 // fallback remote node list, in case fetching update failed, fill this with known to works remote nodes
 config.remoteNodeListFallback = [
-    'goldminer.tk:6969',
+    'nodeparis.bitcoinmono.io:11358',
 ];
 
 // your currency name

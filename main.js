@@ -32,7 +32,7 @@ const DEFAULT_SETTINGS = {
     daemon_port: config.daemonDefaultRpcPort,
     pubnodes_date: null,
     pubnodes_data: config.remoteNodeListFallback,
-    pubnodes_custom: ['127.0.0.1:11898'],
+    pubnodes_custom: ['127.0.0.1:11358'],
     tray_minimize: false,
     tray_close: false,
     darkmode: true,
