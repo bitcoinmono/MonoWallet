@@ -17,7 +17,7 @@ config.walletFileDefaultExt = 'wallet';
 config.walletServiceBinaryFilename = 'BitcoinMono-service';
 
 // version on the bundled service (turtle-service)
-config.walletServiceBinaryVersion = "v0.0.4";
+config.walletServiceBinaryVersion = "v2.0.3";
 
 // config file format supported by wallet service, possible values:
 // ini -->  for turtle service (or its forks) version <= v0.8.3
@@ -38,7 +38,7 @@ config.remoteNodeListUpdateUrl = '';
 
 // fallback remote node list, in case fetching update failed, fill this with known to works remote nodes
 config.remoteNodeListFallback = [
-    'nodeparis.bitcoinmono.io:11358',
+    'remote.bitcoinmono.io:11358','remote02.bitcoinmono.io:11358',
 ];
 
 // your currency name
