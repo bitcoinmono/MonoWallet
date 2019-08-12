@@ -17,7 +17,7 @@ config.walletFileDefaultExt = 'wallet';
 config.walletServiceBinaryFilename = 'BitcoinMono-service';
 
 // version on the bundled service (turtle-service)
-config.walletServiceBinaryVersion = "v2.0.3";
+config.walletServiceBinaryVersion = "v2.0.4";
 
 // config file format supported by wallet service, possible values:
 // ini -->  for turtle service (or its forks) version <= v0.8.3
@@ -44,7 +44,7 @@ config.remoteNodeListFallback = [
 // your currency name
 config.assetName = 'BitcoinMono';
 // your currency ticker
-config.assetTicker =  'BTCM';
+config.assetTicker =  'BTCMZ';
 // your currency address prefix, for address validation
 config.addressPrefix =  'btcm';
 // standard wallet address length, for address validation
