@@ -31,7 +31,7 @@ config.walletServiceRpcPort = 11359;
 config.blockExplorerUrl = 'explorer.bitcoinmono.io';
 
 // default remote node to connect to, set this to a known reliable node for 'just works' user experience
-config.remoteNodeDefaultHost = '127.0.0.1';
+config.remoteNodeDefaultHost = 'remote02.bitcoinmono.io';
 
 // remote node list update url, set to null if you don't have one
 config.remoteNodeListUpdateUrl = '';
@@ -55,7 +55,7 @@ config.integratedAddressLength = 187;
 // minimum fee for sending transaction
 config.minimumFee = 0.1;
 // minimum amount for sending transaction
-config.mininumSend = 0.1;
+config.mininumSend = 1;
 // default mixin/anonimity for transaction
 config.defaultMixin = 1;
 // to convert from atomic unit
