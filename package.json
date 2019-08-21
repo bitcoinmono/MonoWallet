@@ -2,7 +2,7 @@
   "name": "MonoWalletShell",
   "productName": "MonoWallet",
   "description": "BitcoinMono GUI Wallet",
-  "version": "v0.2.4",
+  "version": "v0.2.5",
   "homepage": "https://github.com/bitcoinmono/MonoWallet",
   "repository": "https://github.com/bitcoinmono/MonoWallet",
   "main": "main.js",
@@ -19,18 +19,22 @@
   "license": "ISC",
   "devDependencies": {
     "devtron": "^1.4.0",
-    "electron": "^3.0.13",
-    "electron-builder": "^20.38.3",
-    "jshint": "^2.9.7"
+    "electron": "^4.1.4",
+    "electron-builder": "^20.40.2",
+    "jshint": "^2.10.2"
   },
   "dependencies": {
     "@trodi/electron-splashscreen": "^0.3.4",
+    "ag-grid-community": "^19.1.4",
+    "async": "^2.6.2",
     "csv-writer": "^1.2.0",
     "electron-log": "^2.2.17",
     "electron-store": "^2.0.0",
+    "fnv-plus": "^1.2.12",
+    "node-crypto-gcm": "^1.0.3",
     "qr-image": "^3.2.0",
     "request": "^2.88.0",
-    "request-promise-native": "^1.0.5"
+    "request-promise-native": "^1.0.7"
   },
   "build": {
     "appId": "io.bitcoinmono.walletshell",
@@ -75,13 +79,13 @@
     },
     "nsis": {
       "artifactName": "${productName}-v${version}-${os}-${arch}-setup.${ext}",
-      "oneClick": false,
+      "oneClick": true,
       "perMachine": false
     },
     "mac": {
       "artifactName": "${productName}-v${version}-${os}-${arch}.${ext}",
       "category": "public.app-category.business",
-      "target": "tar.gz"
+      "target": "zip"
     }
   },
   "postinstall": "./node_modules/.bin/electron-builder install-app-deps"
