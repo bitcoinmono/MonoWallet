@@ -62,7 +62,7 @@ config.addressLength = 99;
 config.integratedAddressLength = config.addressLength + ((64 * 11) / 8);
 
 // minimum fee for sending transaction
-config.minimumFee = 0.1;
+config.minimumFee = 10;
 // minimum amount for sending transaction
 config.mininumSend = 1;
 // default mixin/anonimity for transaction
