@@ -2,7 +2,7 @@
   "name": "MonoWalletShell",
   "productName": "MonoWallet",
   "description": "BitcoinMono GUI Wallet",
-  "version": "v0.2.5",
+  "version": "v0.2.6",
   "homepage": "https://github.com/bitcoinmono/MonoWallet",
   "repository": "https://github.com/bitcoinmono/MonoWallet",
   "main": "main.js",
