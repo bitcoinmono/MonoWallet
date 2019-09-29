@@ -61,8 +61,8 @@ config.addressLength = 99;
 // integrated wallet address length, for address validation. Added length is length of payment ID encoded in base58.
 config.integratedAddressLength = config.addressLength + ((64 * 11) / 8);
 
-// minimum fee for sending transaction - 100 btcmz in coins
-config.minimumFee = 100;
+// minimum fee for sending transaction - 500 btcmz in coins
+config.minimumFee = 500;
 // minimum amount for sending transaction
 config.mininumSend = 1;
 // default mixin/anonimity for transaction
