@@ -17,7 +17,7 @@ config.walletFileDefaultExt = 'bzwallet';
 config.walletServiceBinaryFilename = 'BitcoinMono-service';
 
 // version on the bundled service (turtle-service)
-config.walletServiceBinaryVersion = "v2.0.5";
+config.walletServiceBinaryVersion = "v2.0.8";
 
 // config file format supported by wallet service, possible values:
 // ini -->  for turtle service (or its forks) version <= v0.8.3
@@ -61,8 +61,8 @@ config.addressLength = 99;
 // integrated wallet address length, for address validation. Added length is length of payment ID encoded in base58.
 config.integratedAddressLength = config.addressLength + ((64 * 11) / 8);
 
-// minimum fee for sending transaction - 500 btcmz in coins
-config.minimumFee = 500;
+// minimum fee for sending transaction - 1500 btcmz in coins
+config.minimumFee = 1500;
 // minimum amount for sending transaction
 config.mininumSend = 1;
 // default mixin/anonimity for transaction
